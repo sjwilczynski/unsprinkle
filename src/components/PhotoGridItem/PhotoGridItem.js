@@ -51,7 +51,7 @@ const Tags = styled.ul`
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  line-height: 24px;
+  padding: 4px 0;
 `;
 
 const Tag = styled.li`
