@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components/macro';
+import React from "react";
+import styled from "styled-components/macro";
 
 const PhotoGridItem = ({ id, src, alt, tags }) => {
   return (
@@ -31,12 +31,15 @@ const Image = styled.img`
 `;
 
 const Tags = styled.ul`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 24px;
 `;
 
 const Tag = styled.li`
+  display: inline;
+  margin-right: 8px;
   padding: 4px 8px;
   background: var(--color-gray-300);
   font-size: 0.875rem;
